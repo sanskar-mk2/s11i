@@ -1,4 +1,9 @@
 {
+  "resources/js/Pages/Auth/Show.vue": [],
+  "resources/js/Pages/Notes/Create.vue": [],
+  "resources/js/Pages/Notes/Edit.vue": [],
+  "resources/js/Pages/Notes/Index.vue": [],
+  "resources/js/Pages/Notes/Show.vue": [],
   "resources/js/Pages/Welcome.vue": [],
   "resources/js/ssr.js": []
 }
