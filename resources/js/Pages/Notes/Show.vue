@@ -1,9 +1,7 @@
 <script setup>
 import { Head, Link } from "@inertiajs/vue3";
-import { inject } from "vue";
 import dayjs from "dayjs";
 
-const route = inject("route");
 
 defineProps({
     note: {

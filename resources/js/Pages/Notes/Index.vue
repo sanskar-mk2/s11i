@@ -1,8 +1,5 @@
 <script setup>
 import { Head, Link } from "@inertiajs/vue3";
-import { inject } from "vue";
-
-const route = inject("route");
 
 defineProps({
     notes: {
@@ -63,4 +60,4 @@ defineProps({
             </table>
         </div>
     </div>
-</template> 
+</template>

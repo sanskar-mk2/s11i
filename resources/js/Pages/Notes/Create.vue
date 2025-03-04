@@ -1,8 +1,5 @@
 <script setup>
 import { Head, useForm, Link } from "@inertiajs/vue3";
-import { inject } from "vue";
-
-const route = inject("route");
 
 const form = useForm({
     title: "",
