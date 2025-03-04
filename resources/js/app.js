@@ -3,8 +3,10 @@ import "../css/app.css";
 
 import { createSSRApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
+import { ZiggyVue } from 'ziggy-js';
+import { Ziggy } from './ziggy.js';
 
-createInertiaApp({
+const app = createInertiaApp({
     resolve: (name) => {
         const pages = import.meta.glob("./Pages/**/*.vue", { eager: true });
         return pages[`./Pages/${name}.vue`];
@@ -12,6 +14,7 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createSSRApp({ render: () => h(App, props) })
             .use(plugin)
+            .use(ZiggyVue, Ziggy)
             .mount(el);
     },
 });
